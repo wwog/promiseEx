@@ -21,12 +21,14 @@
   ],
   "scripts": {
     "clean": "node scripts/clean.cjs",
-    "build:tsc": "tsc",
+    "build": "tsup",
     "lint": "eslint --ext .ts,.tsx,.js.jsx src",
     "lint:fix": "eslint --fix --ext .ts,.tsx,.js.jsx src",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "test": "node --test"
   },
   "devDependencies": {
+    "tsup": "^7.2.0",
     "@types/node": "^18.16.0",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
@@ -34,5 +36,6 @@
     "eslint-config-prettier": "latest",
     "prettier": "latest",
     "typescript": "latest"
-  }
+  },
+  "dependencies": {}
 }
