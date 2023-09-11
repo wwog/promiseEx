@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test'
 import { PromiseEx } from '../dist/index.js'
 
-describe('sleep test', () => {
+describe('sleep', () => {
   it('should pause execution for specified time', async () => {
     const start = Date.now()
     await PromiseEx.sleep(1000)

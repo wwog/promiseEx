@@ -11,7 +11,7 @@ export default defineConfig((args) => {
     dts: true,
     minify: true,
     sourcemapExcludeSources: true,
-    target: 'node14',
+    target: 'node18',
     tsconfig: './tsconfig.json',
     external: ['node:test'],
     watch: watch,

@@ -1,3 +1,5 @@
+export type AsyncFunction<T> = (...args: any[]) => Promise<T>
+
 export interface PromiseRetryOptions {
   /**
    * @description 最大重试次数
@@ -23,7 +25,6 @@ export interface PromiseRetryOptions {
   retryCondition?: (error: Error) => boolean
 }
 
-
 export interface PromiseTimeoutOptions {
   /**
    * @description 超时时间
@@ -43,4 +44,3 @@ export interface PromiseTimeoutOptions {
    */
   timeoutError?: Error
 }
-
